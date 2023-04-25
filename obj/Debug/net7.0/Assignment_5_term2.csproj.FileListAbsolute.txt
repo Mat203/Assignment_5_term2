@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\bin\Debug\net7.0\Assignment_5_term2.exe
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\bin\Debug\net7.0\Assignment_5_term2.deps.json
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\bin\Debug\net7.0\Assignment_5_term2.runtimeconfig.json
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\bin\Debug\net7.0\Assignment_5_term2.dll
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\bin\Debug\net7.0\Assignment_5_term2.pdb
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.AssemblyInfo.cs
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.dll
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\refint\Assignment_5_term2.dll
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.pdb
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\Assignment_5_term2.genruntimeconfig.cache
+C:\Users\User\Desktop\Информатика\Assignment_5_term2\obj\Debug\net7.0\ref\Assignment_5_term2.dll
