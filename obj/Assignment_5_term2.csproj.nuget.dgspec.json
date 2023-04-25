@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Информатика\\Assignment_5_term2\\Assignment_5_term2.csproj": {}
+    "C:\\Users\\chorn\\Desktop\\it\\Assignment_5_term2\\Assignment_5_term2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Информатика\\Assignment_5_term2\\Assignment_5_term2.csproj": {
+    "C:\\Users\\chorn\\Desktop\\it\\Assignment_5_term2\\Assignment_5_term2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Информатика\\Assignment_5_term2\\Assignment_5_term2.csproj",
+        "projectUniqueName": "C:\\Users\\chorn\\Desktop\\it\\Assignment_5_term2\\Assignment_5_term2.csproj",
         "projectName": "Assignment_5_term2",
-        "projectPath": "C:\\Users\\User\\Desktop\\Информатика\\Assignment_5_term2\\Assignment_5_term2.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Информатика\\Assignment_5_term2\\obj\\",
+        "projectPath": "C:\\Users\\chorn\\Desktop\\it\\Assignment_5_term2\\Assignment_5_term2.csproj",
+        "packagesPath": "C:\\Users\\chorn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chorn\\Desktop\\it\\Assignment_5_term2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\chorn\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
