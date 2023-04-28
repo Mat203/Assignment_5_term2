@@ -2,6 +2,12 @@
 /samples/obj*
 /.idea*
 /samples/.idea
+
+# the next three is from varia 
+.bin
+.obj
+.idea
+#everything below is from artem
 # Common IntelliJ Platform excludes
 
 # User specific

@@ -31,36 +31,64 @@
         Console.WriteLine(string.Join(", ", typosMistakes));
     }
     
+    
+    int LenghtOfTheLongestCommonSubstring(string original, string candidate)
+    {
+        var array = new int[candidate.Length+1, original.Length+1];
+
+        // fill in zeros
+        for (int j1 = 0; j1 <= original.Length; j1++)
+        {
+            array[0, j1] = 0;
+        }
+
+        for (int i1 = 0; i1 <= candidate.Length; i1++)
+        {
+            array[i1, 0] = 0;
+        }
+
+        for (int i = 1; i <= candidate.Length; i++)
+        {
+            for (int j = 1; j <= original.Length; j++)
+            {
+                char letterCandidate = candidate[i-1];
+                char letterOriginal = original[j - 1];
+                // if letters match
+                if (letterOriginal == letterCandidate)
+                {
+                    array[i, j] = array[i - 1, j - 1] + 1;
+                }
+                else
+                {
+                    array[i, j] = 0;
+                }
+            }
+        }
+
+        return MaximumNumberInArray(array);
+    }
+
+    int MaximumNumberInArray(int[,] array)
+    {
+        int max = array[0, 0];
+        for (int i = 0; i < array.GetLength(0); i++)
+        {
+            for (int j = 0; j < array.GetLength(1); j++)
+            {
+                int cur = array[i, j];
+                if (cur > max)
+                {
+                    max = cur;
+                }
+            }
+        }
+
+        return max;
+    }
+
+    Console.WriteLine(LenghtOfTheLongestCommonSubstring("varia", "varivaria"));
 }
+
 
 Main();
 
-
-// just some comment to check if everything is alright
-
-int LenghtOfTheLongestCommonSubstring(string original, string candidate)
-{
-    var array = new int[original.Length, candidate.Length];
-
-    // fill in zeros
-    for (int j1 = 0; j1 <= original.Length; j1++)
-    {
-        array[0, j1] = 0;
-    }
-
-    for (int i1 = 0; i1 <= candidate.Length; i1++)
-    {
-        array[i1, 0] = 0;
-    }
-
-    for (int i = 1; i <= candidate.Length; i++)
-    {
-        for (int j = 0; j <= original.Length; j++)
-        {
-            char letterCandidate = candidate[i-1];
-            // if letters match
-        }
-    }
-
-    return 1;
-}
