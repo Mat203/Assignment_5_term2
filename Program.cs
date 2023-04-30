@@ -153,6 +153,39 @@
 
     FindBestMatchesMatvii("havve", wordList);
 
+
+
+    int LevensteinDistance(string original, string candidate)
+    {
+        // preparation stage
+        var array = new int[candidate.Length+1, original.Length+1];
+        for (int i = 1; i <= original.Length; i++)
+        {
+            array[0, i] = i;
+        }
+
+        for (int j = 1; j <= candidate.Length; j++)
+        {
+            array[j, 0] = j;
+        }
+
+        for (int i = 2; i <=original.Length; i++)
+        {
+            for (int j = 2; j <= candidate.Length; j++)
+            {
+                array [j, i] = Math.Min(Math.Min(array[i, j - 1], array[i - 1, j]),
+                    array[i - 1, j - 1] + IsDifferent(candidate[j - 1], original[i - 1]));
+            }
+        }
+
+        return array[candidate.Length, original.Length];
+
+    }
+
+    int IsDifferent(char first, char second)
+    {
+        return first == second ? 0 : 1;
+    }
 }
 
 
