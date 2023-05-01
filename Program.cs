@@ -73,7 +73,10 @@
                 {
                     cost = 1;
                 }
-
+                if (i > 1 && j > 1 && original[i - 1] == candidate[j - 2] && original[i - 2] == candidate[j - 1])
+                {
+                    cost = Math.Min(cost, matrix[i - 2, j - 2] + cost);
+                }
                 matrix[i, j] = Math.Min(
                     Math.Min(matrix[i - 1, j] + 1, matrix[i, j - 1] + 1),
                     matrix[i - 1, j - 1] + cost);
