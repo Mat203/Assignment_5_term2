@@ -85,7 +85,6 @@
         return max;
     }
 
-    Console.WriteLine(LenghtOfTheLongestCommonSubstring("varia", "varivaria"));
 
     int LevenshteinMatvii(string original, string candidate)
     {
@@ -102,6 +101,7 @@
         {
             matrix[i, 0] = i;
         }
+
         for (int j = 0; j <= m; j++)
         {
             matrix[0, j] = j;
@@ -126,6 +126,7 @@
                     matrix[i - 1, j - 1] + cost);
             }
         }
+
         return matrix[n, m];
     }
 
@@ -143,6 +144,7 @@
         {
             bestMatches.Enqueue(candidates.Dequeue());
         }
+
         bestMatches.Reverse();
 
         for (int i = 1; i <= 5; i++)
@@ -155,26 +157,27 @@
 
 
 
-    int LevensteinDistance(string original, string candidate)
+    int LevensteinDistanceVaria(string original, string candidate)
     {
         // preparation stage
-        var array = new int[candidate.Length+1, original.Length+1];
-        for (int i = 1; i <= original.Length; i++)
+        var array = new int[candidate.Length + 1, original.Length + 1];
+        for (int i = 0; i <= candidate.Length; i++)
         {
-            array[0, i] = i;
+            array[i, 0] = i;
         }
 
-        for (int j = 1; j <= candidate.Length; j++)
+        for (int j = 0; j <= original.Length; j++)
         {
-            array[j, 0] = j;
+            array[0, j] = j;
         }
 
-        for (int i = 2; i <=original.Length; i++)
+        for (int i = 1; i <= candidate.Length; i++)
         {
-            for (int j = 2; j <= candidate.Length; j++)
+            for (int j = 1; j <= original.Length; j++)
             {
-                array [j, i] = Math.Min(Math.Min(array[i, j - 1], array[i - 1, j]),
-                    array[i - 1, j - 1] + IsDifferent(candidate[j - 1], original[i - 1]));
+                array[i, j] = Math.Min(Math.Min(array[i - 1, j] + 1, // deletion
+                        array[i, j - 1] + 1), // insertion
+                    array[i - 1, j - 1] + IsDifferent(candidate[i - 1], original[j - 1])); //substitution
             }
         }
 
