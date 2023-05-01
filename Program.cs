@@ -118,7 +118,7 @@
 
 
 
-    int LevensteinDistanceVaria(string original, string candidate)
+    int EditDistanceVaria(string original, string candidate)
     {
         // preparation stage
         var array = new int[candidate.Length + 1, original.Length + 1];
@@ -139,6 +139,10 @@
                 array[i, j] = Math.Min(Math.Min(array[i - 1, j] + 1, // deletion
                         array[i, j - 1] + 1), // insertion
                     array[i - 1, j - 1] + IsDifferent(candidate[i - 1], original[j - 1])); //substitution
+                if ((i > 1) && (j > 1) && (candidate[i - 1] == original[j - 2]) && (candidate[i - 2] == original[j - 1]))
+                {
+                    array[i, j] = Math.Min(array[i, j], array[i - 2, j - 2] + 1); //transposition
+                }
             }
         }
 
@@ -203,6 +207,7 @@
 
         return max;
     }
+    
 }
 
 
